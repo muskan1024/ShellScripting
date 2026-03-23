@@ -25,9 +25,9 @@ fi
 if [ ! -d $1 ] 
 then
 	mkdir $1
-	echo "Success: $1 created successfully"
+	echo "Success: $1 folder created successfully"
 	exit 1
 fi
 
-echo "Error: Directory already exists"
-
+echo "Error: Folder name $1 already exists"
+exit 0
