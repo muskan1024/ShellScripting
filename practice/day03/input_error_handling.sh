@@ -11,3 +11,4 @@ then
 fi
 
 echo "Error: $Dir folder already exists"
+exit 0
