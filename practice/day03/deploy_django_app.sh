@@ -35,7 +35,7 @@ deploy() {
 echo "*************DEPLOYMENT STARTED*************"
 if ! code_clone; then
 	echo "The code directory already exists"
-	cd django_notes_app
+	cd django-notes-app
 
 fi
 
@@ -51,4 +51,4 @@ fi
 
 deploy
 echo "*************DEPLOYMENT DONE****************"
-
+echo "App is running at http://localhost:8000"

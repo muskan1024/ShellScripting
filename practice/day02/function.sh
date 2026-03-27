@@ -35,7 +35,7 @@ echo
 echo "-----------------------------------------------------------"
 echo
 echo "Checking the nature of the number entered by the user"
-function is_even_odd() {
+is_even_odd() {
 	read -p "Enter a number: " number
 	if ((number%2==0))
 	then
