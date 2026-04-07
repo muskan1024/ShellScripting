@@ -49,6 +49,9 @@ if ! required_restarts; then
 	exit 1
 fi
 
-deploy
+if ! deploy; then
+	echo "Deployment failed, mailing the admin"
+	# sendmail 
+fi
 echo "*************DEPLOYMENT DONE****************"
 echo "App is running at http://localhost:8000"
